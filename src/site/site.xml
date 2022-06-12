@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.8.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.0 https://maven.apache.org/xsd/decoration-1.8.0.xsd"
+         name="Maven">
+
+<bannerLeft>
+    <name>POJO-actor</name>
+    <src>https://maven.apache.org/images/apache-maven-project-2.png</src>
+    <href>https://maven.apache.org/</href>
+  </bannerLeft>
+
+  <bannerRight>
+    <src>https://maven.apache.org/images/maven-logo-2.gif</src>
+  </bannerRight>
+
+  <body>
+
+  <menu name="Specification by Example">
+    <item name="ActorSystem" href="pojobdd/ActorSystem_spec.html" />
+  </menu>
+
+    <menu name="Tutoral (Oritinal Actr)">
+      <item name="Introduction" href="tutorial/ActorModel_220424_oo01/doc.html"/>
+      <item name="Actor System" href="tutorial/ActorSystem_220429_oo01/doc.html"/>
+      <item name="その他" href="tutorial/Other_220501_oo01/doc.html"/>
+    </menu>
+
+    <menu ref="reports"/>
+
+  </body>
+</project>
