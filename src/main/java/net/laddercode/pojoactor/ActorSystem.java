@@ -25,8 +25,8 @@ public class ActorSystem {
         return actor;
     }
 
-    public ActorRef<?> getActor(String actorName) {
-        return actors.get(actorName);
+    public <T> ActorRef<T> getActor(String actorName) {
+        return (ActorRef<T>)actors.get(actorName);
     }
 
 
@@ -38,7 +38,7 @@ public class ActorSystem {
         actors.remove(actorName);
     }
 
-    public ActorRef<?> root() {
+    public ActorRef<Root> root() {
         return this.getActor("ROOT");
     }
 

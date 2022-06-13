@@ -40,8 +40,8 @@ public class ActorRef<T> implements AutoCloseable {
     }
 
 
-    public  ActorRef<T> createChild(String actorName, T object) {
-        ActorRef<T> child = this.actorSystem.actorOf(actorName, object);
+    public  <K> ActorRef<K> createChild(String actorName, K object) {
+        ActorRef<K> child = this.actorSystem.actorOf(actorName, object);
         child.setParentName(this.actorName);
         this.NamesOfChildren.add(actorName);
 
